@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using UnityEngine.XR.Interaction.Toolkit;
 
 public class XRInteraction : MonoBehaviour
 {
@@ -11,7 +12,7 @@ public class XRInteraction : MonoBehaviour
     [SerializeField] Camera mainCamera;
     [SerializeField] GameObject sphere;
     [SerializeField] Material mat;
-
+    [SerializeField] GameObject LeftHand;
     bool Active1 = false;
     bool isNext = false;
     bool isblack = false;
@@ -27,6 +28,8 @@ public class XRInteraction : MonoBehaviour
             isNext = true;
             if (Active1 == true) Panel1.SetActive(false);
             GameObject.Find("Hand").SetActive(false);
+            LeftHand.SetActive(false);
+            GetComponent<XRInteractorLineVisual>().enabled = false;
         }
         if (other.transform.name == "Shoes")// ½Å¹ß±×·¦½Ã
         {
@@ -36,6 +39,8 @@ public class XRInteraction : MonoBehaviour
             if (Active1 == true) Panel1.SetActive(false);
             if (!isblack) isblack = true;
             GameObject.Find("Hand").SetActive(false);
+            LeftHand.SetActive(false);
+            GetComponent<XRInteractorLineVisual>().enabled = false;
         }
         if (other.transform.name == "Pinp") //ÇÉ ±×·¦½Ã
         {

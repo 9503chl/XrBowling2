@@ -4,33 +4,39 @@ using UnityEngine;
 
 public class ColorChagne : MonoBehaviour
 {
+    [SerializeField] Light direcLight;
     [SerializeField] Material WallM;
-    bool act1 = true;
-    bool act2 = false;
-    int r, g;
-    int a = 0, b = 180;
-
+    [SerializeField] Camera mainCam;
+    bool colorC = false;
+    bool minus = false;
+    float a = 0;
+    float b = 0;
     void Update()
     {
-        WallM.color = new Color(r, g, 255,1);
-        if (act1)
+        mainCam.backgroundColor = new Color(a, b, 1, 0.6f);
+        direcLight.color = new Color(a, b, 1);
+        WallM.color = new Color(a, b ,1);
+        if (!colorC)
         {
-            r = a; g = b;
-            a++;
-            if (a == 180)
+
+            if (a >= 1) minus = true;
+            if (minus) a -= Time.deltaTime;
+            else a += Time.deltaTime; ;
+            if(minus && a <= 0)
             {
-                act1 = false;
-                act2 = true;
+                minus = false;
+                colorC = true;
             }
         }
-        if (act2)
+        else
         {
-            r = b; g = a;
-            b--;
-            if (b == 180)
+            if (b >= 1) minus = true;
+            if (minus) b -= Time.deltaTime;
+            else b += Time.deltaTime;
+            if (minus && b <= 0)
             {
-                act1 = true;
-                act2 = false;
+                minus = false;
+                colorC = false;
             }
         }
     }

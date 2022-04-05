@@ -10,7 +10,6 @@ public class PlayerInput : MonoBehaviour
     [SerializeField] Camera viewCamera;
     [SerializeField] Material mat;
 
-
     float alpha1 = 0;
     public bool isNext = false;
     Color InputColor = new Color(0, 0, 0, 0);
@@ -19,9 +18,10 @@ public class PlayerInput : MonoBehaviour
     public bool isNormal = false;
     public bool isMove = false;
     public float power = 0;
-
+    float mouseX = 0;
     private void FixedUpdate()
     {
+        Rotate();
         power = gameObject.transform.rotation.z;
         InputColor = new Color(0, 0, 0, alpha1);
         if (power >= 0.15)
@@ -50,7 +50,13 @@ public class PlayerInput : MonoBehaviour
         }
         if (alpha1 >=1.0f) SceneManager.LoadScene("TitleScene");
     }
-   
+
+    void Rotate()
+    {
+        mouseX += Input.GetAxis("Mouse X")*10;
+        mainCamera.transform.eulerAngles = new Vector3(0, mouseX, 0);
+    }
+
     private void OnTriggerEnter(Collider other)
     {
         if(other.transform.name == "Shoes")

@@ -6,14 +6,14 @@ public class ColorChagne : MonoBehaviour
 {
     [SerializeField] Light direcLight;
     [SerializeField] Material WallM;
-    [SerializeField] Camera mainCam;
+    [SerializeField] Camera UICam;
     bool colorC = false;
     bool minus = false;
     float a = 0;
     float b = 0;
     void Update()
     {
-        mainCam.backgroundColor = new Color(a, b, 1, 0.6f);
+        UICam.backgroundColor = new Color(a, b, 1, 0.6f);
         direcLight.color = new Color(a, b, 1);
         WallM.color = new Color(a, b ,1);
         if (!colorC)

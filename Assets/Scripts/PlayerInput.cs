@@ -3,12 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using UnityEngine.XR.Interaction.Toolkit;
 public class PlayerInput : MonoBehaviour
 {
     [SerializeField] GameObject sphere;
     [SerializeField] Camera mainCamera;
     [SerializeField] Camera viewCamera;
     [SerializeField] Material mat;
+    [SerializeField] GameObject LeftHands;
 
     float alpha1 = 0;
     public bool isNext = false;
@@ -62,6 +64,8 @@ public class PlayerInput : MonoBehaviour
         if(other.transform.name == "Shoes")
         {
             Destroy(other.gameObject);
+            GetComponent<XRInteractorLineVisual>().enabled = false;
+            LeftHands.SetActive(false);
             GameObject.Find("Hand").SetActive(false);
             Destroy(viewCamera);
             isNext = true;

@@ -36,10 +36,6 @@ public class DesPin : MonoBehaviour
             GameObject.Find("Sum9").GetComponent<Text>().DOColor(Color.black, 0.5f);
             GameObject.Find("Sum10").GetComponent<Text>().DOColor(Color.black, 0.5f);
             GameObject.Find("ScoreBoardTotal").GetComponent<Text>().DOColor(Color.yellow, 0.5f);
-            GameObject.Find("Spawner").GetComponent<Ball>().viewCamera.GetComponent<Camera>().cullingMask = 1;
-            GameObject.Find("Spawner").GetComponent<Ball>().viewCamera.GetComponent<Camera>().cullingMask = LayerMask.NameToLayer("Score");
-            GameObject.Find("Spanwer").GetComponent<Accel>().mainCam.GetComponent<Camera>().cullingMask = ~(1 << LayerMask.NameToLayer("UI"));
-            Invoke("CamReroll", 1.0f);
         }
         else Destroy(other.gameObject);
     }
@@ -55,9 +51,5 @@ public class DesPin : MonoBehaviour
     void isMoveOff()
     {
         GameObject.Find("RightHand Controller").GetComponent<PlayerInput>().isMove = false;
-    }
-    void CamReroll()
-    {
-        GameObject.Find("Spanwer").GetComponent<Accel>().mainCam.GetComponent<Camera>().cullingMask = -1; //evry
     }
 }

@@ -13,12 +13,17 @@ public class XRInteraction : MonoBehaviour
     [SerializeField] GameObject sphere;
     [SerializeField] Material mat;
     [SerializeField] GameObject LeftHand;
+    float mouseX = 0;
     bool Active1 = false;
     bool isNext = false;
     bool isblack = false;
     Color InputColor = new Color(0, 0, 0, 0);
     float alpha1 = 0;
     int count = 0;
+    void Update()
+    {
+        Rotate();
+    }
     private void OnCollisionEnter(Collision other)
     {
         if (other.transform.tag == "Ball")// °ø ±×·¦½Ã
@@ -57,6 +62,11 @@ public class XRInteraction : MonoBehaviour
                 Active1 = false;
             }
         }
+    }
+    void Rotate()
+    {
+        mouseX += Input.GetAxis("Mouse X") * 10;
+        mainCamera.transform.eulerAngles = new Vector3(0, mouseX, 0);
     }
     private void FixedUpdate()
     {

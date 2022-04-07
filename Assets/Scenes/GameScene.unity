@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.43667564, g: 0.48427135, b: 0.5645232, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311918, g: 0.3807398, b: 0.35872716, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3874,6 +3874,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ae26e19cd956134bbdf3c6f65bf393a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1282792714 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5811836619165517922, guid: 2dd74b7c0a757eb498ca775302f3b6dc, type: 3}
+  m_PrefabInstance: {fileID: 4307526488976962506}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1310046559
 GameObject:
   m_ObjectHideFlags: 0
@@ -7837,6 +7842,7 @@ MonoBehaviour:
   mainCamera: {fileID: 1108777609}
   viewCamera: {fileID: 1248076505}
   mat: {fileID: 2100000, guid: 88c038230edf4ee42b1539ec6a5989b1, type: 2}
+  LeftHands: {fileID: 1282792714}
   isNext: 0
   isLeft: 0
   isRight: 0
@@ -7868,6 +7874,62 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5938060362462159085, guid: a0eb041d6c208e246b0e4d4fcd1c37dc, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6fbc23a41cfb5334e8531b07631d1ec3, type: 2}
+    - target: {fileID: 5938060362988955944, guid: a0eb041d6c208e246b0e4d4fcd1c37dc, type: 3}
+      propertyPath: m_Type
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5938060362988955944, guid: a0eb041d6c208e246b0e4d4fcd1c37dc, type: 3}
+      propertyPath: m_Range
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 5938060362988955944, guid: a0eb041d6c208e246b0e4d4fcd1c37dc, type: 3}
+      propertyPath: m_Intensity
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5938060362988955944, guid: a0eb041d6c208e246b0e4d4fcd1c37dc, type: 3}
+      propertyPath: m_RenderMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5938060362988955944, guid: a0eb041d6c208e246b0e4d4fcd1c37dc, type: 3}
+      propertyPath: m_Shadows.m_Type
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5938060362988955945, guid: a0eb041d6c208e246b0e4d4fcd1c37dc, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5938060362988955951, guid: a0eb041d6c208e246b0e4d4fcd1c37dc, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.67
+      objectReference: {fileID: 0}
+    - target: {fileID: 5938060362988955951, guid: a0eb041d6c208e246b0e4d4fcd1c37dc, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2.284
+      objectReference: {fileID: 0}
+    - target: {fileID: 5938060362988955951, guid: a0eb041d6c208e246b0e4d4fcd1c37dc, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5938060362988955951, guid: a0eb041d6c208e246b0e4d4fcd1c37dc, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5938060362988955951, guid: a0eb041d6c208e246b0e4d4fcd1c37dc, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5938060362988955951, guid: a0eb041d6c208e246b0e4d4fcd1c37dc, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5938060362988955951, guid: a0eb041d6c208e246b0e4d4fcd1c37dc, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6430913306599945238, guid: a0eb041d6c208e246b0e4d4fcd1c37dc, type: 3}
       propertyPath: UICam
       value: 

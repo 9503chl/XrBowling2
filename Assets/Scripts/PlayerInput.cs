@@ -64,12 +64,11 @@ public class PlayerInput : MonoBehaviour
         if(other.transform.name == "Shoes")
         {
             Destroy(other.gameObject);
+            Destroy(viewCamera);
+            isNext = true;
             GetComponent<XRInteractorLineVisual>().enabled = false;
             LeftHands.SetActive(false);
             GameObject.Find("Hand").SetActive(false);
-            Destroy(viewCamera);
-            isNext = true;
-
         }
     }
 }

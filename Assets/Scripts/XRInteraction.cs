@@ -34,7 +34,7 @@ public class XRInteraction : MonoBehaviour
             if (Active1 == true) Panel1.SetActive(false);
             GameObject.Find("Hand").SetActive(false);
             LeftHand.SetActive(false);
-            GetComponent<XRInteractorLineVisual>().enabled = false;
+            gameObject.GetComponent<XRInteractorLineVisual>().enabled = false;
         }
         if (other.transform.name == "Shoes")// ½Å¹ß±×·¦½Ã
         {
@@ -45,7 +45,7 @@ public class XRInteraction : MonoBehaviour
             if (!isblack) isblack = true;
             GameObject.Find("Hand").SetActive(false);
             LeftHand.SetActive(false);
-            GetComponent<XRInteractorLineVisual>().enabled = false;
+            gameObject.GetComponent<XRInteractorLineVisual>().enabled = false;
         }
         if (other.transform.name == "Pinp") //ÇÉ ±×·¦½Ã
         {

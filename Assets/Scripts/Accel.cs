@@ -6,10 +6,10 @@ using UnityEngine;
 public class Accel : MonoBehaviour
 {
     public GameObject mainCam;
-    float power;
     private Transform tr;
     public bool isMove = false;
     public float speed = 0.0f;
+    float power;
     float spin = 0;
     public int Angle = 0;
     public float time = 0.0f;
@@ -17,18 +17,18 @@ public class Accel : MonoBehaviour
     void Awake()
     {
         tr = GetComponent<Transform>();
+        mainCam = GameObject.Find("Main Camera");
     }
     void FixedUpdate()
     {
         if (isMove)
         {
-            if (!once) 
+            if (!once)
             {
-                mainCam.SetActive(false);
-                GameObject.Find("Spawner").GetComponent<Ball>().viewCamera.SetActive(true);
+                GameObject.Find("BreakWall").GetComponent<DesPin>().camVec = mainCam.transform.position;
                 once = true;
             }
-            GameObject.Find("Spawner").GetComponent<Ball>().viewCamera.transform.position = gameObject.transform.position + new Vector3(0, 0.2f, -0.1f);
+            mainCam.transform.position = gameObject.transform.position + new Vector3(0, 0.2f, -0.1f);
             GameObject.Find("Main Camera").transform.rotation = Quaternion.Euler(0,0,0);
             time += Time.deltaTime; //움직인 시간
             Angle += 30;

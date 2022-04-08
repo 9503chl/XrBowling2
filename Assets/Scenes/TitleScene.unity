@@ -3754,7 +3754,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5938060362988955944, guid: a0eb041d6c208e246b0e4d4fcd1c37dc, type: 3}
       propertyPath: m_Shadows.m_Type
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5938060362988955951, guid: a0eb041d6c208e246b0e4d4fcd1c37dc, type: 3}
       propertyPath: m_LocalPosition.x

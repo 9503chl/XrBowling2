@@ -8,7 +8,6 @@ public class PlayerInput : MonoBehaviour
 {
     [SerializeField] GameObject sphere;
     [SerializeField] Camera mainCamera;
-    [SerializeField] Camera viewCamera;
     [SerializeField] Material mat;
     [SerializeField] GameObject LeftHands;
 
@@ -64,9 +63,8 @@ public class PlayerInput : MonoBehaviour
         if(other.transform.name == "Shoes")
         {
             Destroy(other.gameObject);
-            Destroy(viewCamera);
             isNext = true;
-            GetComponent<XRInteractorLineVisual>().enabled = false;
+            gameObject.GetComponent<XRInteractorLineVisual>().enabled = false;
             LeftHands.SetActive(false);
             GameObject.Find("Hand").SetActive(false);
         }

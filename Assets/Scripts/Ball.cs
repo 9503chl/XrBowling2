@@ -6,20 +6,14 @@ public class Ball : MonoBehaviour
 {
     [SerializeField] GameObject sBall;
     [SerializeField] AudioSource ballSound;
-    public GameObject viewCamera;
     public bool isGone = false;
     public bool isRoll = false;
-    private void Start()
-    {
-        viewCamera = GameObject.Find("View Camera");
-        viewCamera.SetActive(false);
-    }
     private void Update()
     {
         if (isGone) //공이랑 breakwall이 충돌시
         {
             ballSound.Stop();
-            Invoke("Spawner1",4.5f);
+            Invoke("Spawner1", 4.5f);
             isGone = false; isRoll = false;
         }
         if (isRoll)

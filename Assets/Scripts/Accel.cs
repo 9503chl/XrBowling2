@@ -1,11 +1,10 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 
 public class Accel : MonoBehaviour
 {
     public GameObject mainCam;
+    public GameObject viewCam;
     private Transform tr;
     public bool isMove = false;
     public float speed = 0.0f;
@@ -17,6 +16,7 @@ public class Accel : MonoBehaviour
     void Awake()
     {
         tr = GetComponent<Transform>();
+        viewCam = GameObject.Find("BreakWall").GetComponent<DesPin>().viewCam;
         mainCam = GameObject.Find("Main Camera");
     }
     void FixedUpdate()
@@ -25,11 +25,11 @@ public class Accel : MonoBehaviour
         {
             if (!once)
             {
-                GameObject.Find("BreakWall").GetComponent<DesPin>().camVec = mainCam.transform.position;
+                viewCam.SetActive(true);
+                mainCam.SetActive(false);
                 once = true;
             }
-            mainCam.transform.position = gameObject.transform.position + new Vector3(0, 0.2f, -0.1f);
-            GameObject.Find("Main Camera").transform.rotation = Quaternion.Euler(0,0,0);
+            viewCam.transform.position = gameObject.transform.position + new Vector3(0, 0.2f, -0.1f);
             time += Time.deltaTime; //움직인 시간
             Angle += 30;
             speed = power;
@@ -46,7 +46,7 @@ public class Accel : MonoBehaviour
                 {
                     tr.transform.Translate(new Vector3(speed * 0.3f, 0, 0.6f) * Time.deltaTime * 5.0f, Space.World);
                 }
-                else if (time <= 3.5f) //회전이 천천히 걸림
+                else if (time <= 4.0f) //회전이 천천히 걸림
                 {
                     spin += Time.deltaTime;
                     tr.transform.Translate(new Vector3(-speed * spin * 0.5f, 0, 0.6f) * Time.deltaTime * 5.0f, Space.World);

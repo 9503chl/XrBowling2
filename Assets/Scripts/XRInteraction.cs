@@ -13,6 +13,7 @@ public class XRInteraction : MonoBehaviour
     [SerializeField] GameObject sphere;
     [SerializeField] Material mat;
     [SerializeField] GameObject LeftHand;
+    [SerializeField] GameObject Hand;
     float mouseX = 0;
     bool Active1 = false;
     bool isNext = false;
@@ -32,7 +33,7 @@ public class XRInteraction : MonoBehaviour
             UI.SetActive(false); //켜져있으면 끄기
             isNext = true;
             if (Active1 == true) Panel1.SetActive(false);
-            GameObject.Find("Hand").SetActive(false);
+            Hand.SetActive(false);
             LeftHand.SetActive(false);
             gameObject.GetComponent<XRInteractorLineVisual>().enabled = false;
         }
@@ -43,7 +44,7 @@ public class XRInteraction : MonoBehaviour
             isNext = true;
             if (Active1 == true) Panel1.SetActive(false);
             if (!isblack) isblack = true;
-            GameObject.Find("Hand").SetActive(false);
+            Hand.SetActive(false);
             LeftHand.SetActive(false);
             gameObject.GetComponent<XRInteractorLineVisual>().enabled = false;
         }

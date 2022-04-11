@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311918, g: 0.3807398, b: 0.35872716, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -219,6 +219,11 @@ MonoBehaviour:
   BarrelblowSound: {fileID: 187654152}
   Pointer: {fileID: 773785405}
   DoTweenDone: 0
+--- !u!1 &142428590 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5811836619165517922, guid: 2dd74b7c0a757eb498ca775302f3b6dc, type: 3}
+  m_PrefabInstance: {fileID: 2135255382}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &146268071 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4307526487066761243, guid: 2dd74b7c0a757eb498ca775302f3b6dc, type: 3}
@@ -241,7 +246,8 @@ MonoBehaviour:
   mainCamera: {fileID: 602925338}
   sphere: {fileID: 608846480}
   mat: {fileID: 2100000, guid: 88c038230edf4ee42b1539ec6a5989b1, type: 2}
-  LeftHand: {fileID: 0}
+  LeftHand: {fileID: 142428590}
+  Hand: {fileID: 662354482}
 --- !u!135 &146268073
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1881,6 +1887,11 @@ MonoBehaviour:
   BarrelblowSound: {fileID: 187654152}
   Pointer: {fileID: 773785405}
   DoTweenDone: 0
+--- !u!1 &662354482 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1869620865541337412, guid: 2dd74b7c0a757eb498ca775302f3b6dc, type: 3}
+  m_PrefabInstance: {fileID: 2135255382}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &766668684
 GameObject:
   m_ObjectHideFlags: 0
@@ -3753,7 +3764,23 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5938060362988955944, guid: a0eb041d6c208e246b0e4d4fcd1c37dc, type: 3}
+      propertyPath: m_Shadows.m_Bias
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5938060362988955944, guid: a0eb041d6c208e246b0e4d4fcd1c37dc, type: 3}
       propertyPath: m_Shadows.m_Type
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5938060362988955944, guid: a0eb041d6c208e246b0e4d4fcd1c37dc, type: 3}
+      propertyPath: m_Shadows.m_Strength
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5938060362988955944, guid: a0eb041d6c208e246b0e4d4fcd1c37dc, type: 3}
+      propertyPath: m_Shadows.m_Resolution
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5938060362988955945, guid: a0eb041d6c208e246b0e4d4fcd1c37dc, type: 3}
+      propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5938060362988955951, guid: a0eb041d6c208e246b0e4d4fcd1c37dc, type: 3}
@@ -4549,6 +4576,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1869620865541337412, guid: 2dd74b7c0a757eb498ca775302f3b6dc, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3083220216362966592, guid: 2dd74b7c0a757eb498ca775302f3b6dc, type: 3}
       propertyPath: controller
       value: 

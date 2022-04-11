@@ -2596,8 +2596,8 @@ Light:
   m_InnerSpotAngle: 1
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 0
-    m_Resolution: -1
+    m_Type: 1
+    m_Resolution: 3
     m_CustomResolution: -1
     m_Strength: 1
     m_Bias: 0.05
@@ -4566,6 +4566,9 @@ MonoBehaviour:
   m_InteractionLayerMask:
     serializedVersion: 2
     m_Bits: 4294967295
+  m_InteractionLayers:
+    m_Bits: 1
+  m_SelectMode: 0
   m_CustomReticle: {fileID: 0}
   m_FirstHoverEntered:
     m_PersistentCalls:
@@ -4577,6 +4580,12 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_HoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FirstSelectEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_LastSelectExited:
     m_PersistentCalls:
       m_Calls: []
   m_SelectEntered:
@@ -4621,6 +4630,9 @@ MonoBehaviour:
   m_TeleportationProvider: {fileID: 0}
   m_MatchOrientation: 0
   m_TeleportTrigger: 0
+  m_Teleporting:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &7937439209388410630
 GameObject:
   m_ObjectHideFlags: 0
@@ -5493,7 +5505,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sBall: {fileID: 21220150830314781, guid: 4596cbffafe958d4c93361e18b2f1925, type: 3}
   ballSound: {fileID: 7937439210127703404}
-  viewCamera: {fileID: 0}
   isGone: 0
   isRoll: 0
 --- !u!1 &7937439210347716964
@@ -5820,9 +5831,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a9c792c54236c05479cc578f857d1eb4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mainCam: {fileID: 0}
   isFirst: 0
   isCollide: 0
   isStart: 0
+  camVec: {x: 0, y: 0, z: 0}
 --- !u!54 &7937439210364014856
 Rigidbody:
   m_ObjectHideFlags: 0

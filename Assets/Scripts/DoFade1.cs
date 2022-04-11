@@ -5,7 +5,6 @@ using UnityEngine.UI;
 using DG.Tweening;
 public class DoFade1 : MonoBehaviour
 {
-
     void Update()
     {
         if (GameObject.FindWithTag("Score").GetComponent<ScoreText>().count == 4)

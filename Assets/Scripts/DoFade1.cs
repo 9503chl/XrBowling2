@@ -5,6 +5,7 @@ using UnityEngine.UI;
 using DG.Tweening;
 public class DoFade1 : MonoBehaviour
 {
+    [SerializeField]Material ScoreMat;
     void Update()
     {
         if (GameObject.FindWithTag("Score").GetComponent<ScoreText>().count == 4)
@@ -13,7 +14,14 @@ public class DoFade1 : MonoBehaviour
             {
                 gameObject.GetComponent<Text>().DOFade(0, 4.5f);
             }
-            else gameObject.GetComponent<SpriteRenderer>().DOFade(0, 4.5f);
+            else if(gameObject.transform.name == "ScoreTotal")
+            {
+                ScoreMat.DOFade(0, 0.01f);
+            }
+            else
+            {
+                gameObject.GetComponent<SpriteRenderer>().DOFade(0, 4.5f);
+            }
         }
     }
 }

@@ -13,6 +13,7 @@ public class Accel : MonoBehaviour
     public int Angle = 0;
     public float time = 0.0f;
     bool once = false;
+    bool isEnd = false; 
     void Awake()
     {
         tr = GetComponent<Transform>();
@@ -21,7 +22,7 @@ public class Accel : MonoBehaviour
     }
     void FixedUpdate()
     {
-        if (isMove)
+        if (isMove && !isEnd)
         {
             if (!once)
             {
@@ -70,6 +71,10 @@ public class Accel : MonoBehaviour
             isMove = true;
             GameObject.Find("RightHand Controller").GetComponent<PlayerInput>().isMove = true;
             GameObject.Find("Spawner").GetComponent<Ball>().isRoll = true;
+        }
+        if(other.transform.name == "BreakWall")
+        {
+            isEnd = true;
         }
     }
 }

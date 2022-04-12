@@ -7,6 +7,7 @@ using DG.Tweening;
 public class DesPin : MonoBehaviour
 {
     [SerializeField] GameObject mainCam;
+    [SerializeField] Material ScoreMat;
     public GameObject viewCam;
     public bool isFirst = false;
     public bool isCollide = false;
@@ -26,7 +27,7 @@ public class DesPin : MonoBehaviour
             Destroy(other.gameObject);
             GameObject.Find("hall").GetComponent<Dump>().dumpCount = 0;
             GameObject.Find("hall2").GetComponent<Dump>().dumpCount = 0;
-            GameObject.Find("ScoreTotal").GetComponent<SpriteRenderer>().DOColor(Color.white, 0.5f);//Ui
+            ScoreMat.DOColor(Color.white, 0.5f);//Ui
             GameObject.Find("ScoreBoard1").GetComponent<Text>().DOColor(Color.black, 0.5f);
             GameObject.Find("ScoreBoard2").GetComponent<Text>().DOColor(Color.black, 0.5f);
             GameObject.Find("Sum1").GetComponent<Text>().DOColor(Color.black, 0.5f);

@@ -20,9 +20,11 @@ public class PlayerInput : MonoBehaviour
     public bool isMove = false;
     public float power = 0;
     float mouseX = 0;
+    float mouseY = 0;
     private void FixedUpdate()
     {
         Rotate();
+        Mathf.Clamp(mouseY, -55, 55);
         power = gameObject.transform.rotation.z;
         InputColor = new Color(0, 0, 0, alpha1);
         if (power >= 0.15)
@@ -54,8 +56,9 @@ public class PlayerInput : MonoBehaviour
 
     void Rotate()
     {
-        mouseX += Input.GetAxis("Mouse X")*10;
-        mainCamera.transform.eulerAngles = new Vector3(0, mouseX, 0);
+        mouseX += Input.GetAxis("Mouse X") * 10;
+        mouseY += Input.GetAxis("Mouse Y") * 10;
+        mainCamera.transform.eulerAngles = new Vector3(-mouseY, mouseX, 0);
     }
 
     private void OnTriggerEnter(Collider other)

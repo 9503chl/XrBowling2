@@ -16,7 +16,7 @@ public class DoFade1 : MonoBehaviour
             }
             else if(gameObject.transform.name == "ScoreTotal")
             {
-                ScoreMat.DOFade(0, 0.01f);
+                ScoreMat.DOFade(0, 4.5f);
             }
             else
             {

@@ -25,7 +25,7 @@ public class ScoreText : MonoBehaviour
         }
         if (GameObject.Find("Score").GetComponent<Score>().turnEnd) 
         {
-            textSound.Play();
+            Invoke("SoundPlay", 1.99f);
             if (gameObject.name == "ScoreBoard1")
             {
                 string str = "";
@@ -33,7 +33,7 @@ public class ScoreText : MonoBehaviour
                 {
                     str += GameObject.Find("Score").GetComponent<Score>().PointNow[i, 0];
                 }
-                uiText.DOText(str, 0.5f);
+                uiText.DOText(str, 0.01f);
                 count++;
             }
             else if (gameObject.name == "ScoreBoard2")
@@ -43,14 +43,14 @@ public class ScoreText : MonoBehaviour
                 {
                     str += GameObject.Find("Score").GetComponent<Score>().PointNow[i, 1];
                 }
-                uiText.DOText(str, 0.5f);
+                uiText.DOText(str, 0.01f);
                 count++;
             }
             else if (gameObject.tag == "ScoreBoard") 
             {
                 for (int i = 0; i < 10; i++)
                 {
-                    GameObject.Find("Sum"+(i+1)).GetComponent<Text>().DOText(GameObject.Find("Score").GetComponent<Score>().PointNow[i, 2], 0.5f);
+                    GameObject.Find("Sum"+(i+1)).GetComponent<Text>().DOText(GameObject.Find("Score").GetComponent<Score>().PointNow[i, 2], 0.01f);
                 }
                 count++;
             }
@@ -58,9 +58,13 @@ public class ScoreText : MonoBehaviour
             {
                 string str = "";
                 str += GameObject.Find("Score").GetComponent<Score>().totalScore;
-                uiText.DOText(str, 0.5f);
+                uiText.DOText(str, 0.01f);
                 count++;
             }
         }
+    }
+    void SoundPlay()
+    {
+        textSound.Play();
     }
 }

@@ -23,7 +23,7 @@ public class PlayerInput : MonoBehaviour
     float mouseY = 0;
     private void FixedUpdate()
     {
-        Rotate();
+        //Rotate();
         Mathf.Clamp(mouseY, -55, 55);
         power = gameObject.transform.rotation.z;
         InputColor = new Color(0, 0, 0, alpha1);

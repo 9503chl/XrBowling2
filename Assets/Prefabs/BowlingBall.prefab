@@ -94,7 +94,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 21220150830314781}
   serializedVersion: 2
-  m_Mass: 100
+  m_Mass: 10000
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 0
@@ -243,6 +243,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mainCam: {fileID: 4307526488548261588, guid: 2dd74b7c0a757eb498ca775302f3b6dc, type: 3}
+  viewCam: {fileID: 0}
   isMove: 0
   speed: 0
   Angle: 0

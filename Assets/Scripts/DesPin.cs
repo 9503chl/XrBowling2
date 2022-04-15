@@ -18,7 +18,7 @@ public class DesPin : MonoBehaviour
         {
             isFirst = true;
             Invoke("isCollideM", 1.2f);
-            Invoke("tCountUp", 2.0f); //세는 시간을 주자
+            Invoke("tCountUp", 1.0f); //세는 시간을 주자
             Invoke("isMoveOff", 1.5f);
             viewCam.transform.position = GameObject.Find("XR Rig").transform.position;
             viewCam.SetActive(false);
@@ -27,20 +27,20 @@ public class DesPin : MonoBehaviour
             Destroy(other.gameObject);
             GameObject.Find("hall").GetComponent<Dump>().dumpCount = 0;
             GameObject.Find("hall2").GetComponent<Dump>().dumpCount = 0;
-            ScoreMat.DOColor(Color.white, 0.5f);//Ui
-            GameObject.Find("ScoreBoard1").GetComponent<Text>().DOColor(Color.red, 0.5f);
-            GameObject.Find("ScoreBoard2").GetComponent<Text>().DOColor(Color.red, 0.5f);
-            GameObject.Find("Sum1").GetComponent<Text>().DOColor(Color.red, 0.5f);
-            GameObject.Find("Sum2").GetComponent<Text>().DOColor(Color.red, 0.5f);
-            GameObject.Find("Sum3").GetComponent<Text>().DOColor(Color.red, 0.5f);
-            GameObject.Find("Sum4").GetComponent<Text>().DOColor(Color.red, 0.5f);
-            GameObject.Find("Sum5").GetComponent<Text>().DOColor(Color.red, 0.5f);
-            GameObject.Find("Sum6").GetComponent<Text>().DOColor(Color.red, 0.5f);
-            GameObject.Find("Sum7").GetComponent<Text>().DOColor(Color.red, 0.5f);
-            GameObject.Find("Sum8").GetComponent<Text>().DOColor(Color.red, 0.5f);
-            GameObject.Find("Sum9").GetComponent<Text>().DOColor(Color.red, 0.5f);
-            GameObject.Find("Sum10").GetComponent<Text>().DOColor(Color.red, 0.5f);
-            GameObject.Find("ScoreBoardTotal").GetComponent<Text>().DOColor(Color.red, 0.5f);
+            ScoreMat.DOColor(Color.white, 1.5f);//Ui
+            GameObject.Find("ScoreBoard1").GetComponent<Text>().DOColor(Color.red, 0.1f);
+            GameObject.Find("ScoreBoard2").GetComponent<Text>().DOColor(Color.red, 0.1f);
+            GameObject.Find("Sum1").GetComponent<Text>().DOColor(Color.red, 0.1f);
+            GameObject.Find("Sum2").GetComponent<Text>().DOColor(Color.red, 0.1f);
+            GameObject.Find("Sum3").GetComponent<Text>().DOColor(Color.red, 0.1f);
+            GameObject.Find("Sum4").GetComponent<Text>().DOColor(Color.red, 0.1f);
+            GameObject.Find("Sum5").GetComponent<Text>().DOColor(Color.red, 0.1f);
+            GameObject.Find("Sum6").GetComponent<Text>().DOColor(Color.red, 0.1f);
+            GameObject.Find("Sum7").GetComponent<Text>().DOColor(Color.red, 0.1f);
+            GameObject.Find("Sum8").GetComponent<Text>().DOColor(Color.red, 0.1f);
+            GameObject.Find("Sum9").GetComponent<Text>().DOColor(Color.red, 0.1f);
+            GameObject.Find("Sum10").GetComponent<Text>().DOColor(Color.red, 0.1f);
+            GameObject.Find("ScoreBoardTotal").GetComponent<Text>().DOColor(Color.red, 0.1f);
         }
         else Destroy(other.gameObject);
     }

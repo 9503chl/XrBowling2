@@ -12,15 +12,15 @@ public class DoFade1 : MonoBehaviour
         {
             if (gameObject.tag == "Score" || gameObject.tag == "ScoreBoard")
             {
-                gameObject.GetComponent<Text>().DOFade(0, 4.5f);
+                gameObject.GetComponent<Text>().DOFade(0, 5.5f);
             }
             else if(gameObject.transform.name == "ScoreTotal")
             {
-                ScoreMat.DOFade(0, 4.5f);
+                ScoreMat.DOFade(0, 5.5f);
             }
             else
             {
-                gameObject.GetComponent<SpriteRenderer>().DOFade(0, 4.5f);
+                gameObject.GetComponent<SpriteRenderer>().DOFade(0, 5.5f);
             }
         }
     }

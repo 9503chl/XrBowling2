@@ -10,7 +10,7 @@ public class Player : MonoBehaviour
         InteractiveObject obj = other.GetComponent<InteractiveObject>();
         if(obj != null)
         {
-
+            obj.Interaction();
         }
     }
 }

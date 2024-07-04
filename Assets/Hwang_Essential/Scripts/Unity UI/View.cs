@@ -223,17 +223,6 @@ namespace UnityEngine.UI
                 }
             });
         }
-
-        public void DelayedFadeIn(float time)
-        {
-            StartCoroutine(DelayedFadeInCor(time));
-        }
-        private IEnumerator DelayedFadeInCor(float time)
-        {
-            yield return new WaitForSeconds(time);
-
-            Hide();
-        }
         public void SavePosition()
         {
             if (DragTarget != null)

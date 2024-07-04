@@ -18,6 +18,6 @@ public class InfoManager : MonoBehaviour
     public void InfoPanelOnOff()
     {
         InfoGroup.SetActive(!isOn);
-        isOn ^= false;
+        isOn ^= true;
     }
 }

@@ -199,6 +199,7 @@ public class BaseManager : MonoBehaviour
         }
         if (activeView != targetView)
         {
+            FadeManager.Instance.FadeInOut();
             if (views.ContainsKey(activeView))
             {
                 views[activeView].Hide();

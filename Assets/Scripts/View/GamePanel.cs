@@ -8,7 +8,6 @@ public class GamePanel : View
 {
     [NonSerialized]
     private Coroutine standByCoroutine;
-
     private void Awake()
     {
         OnBeforeShow += View_BeforeShow;
@@ -29,7 +28,7 @@ public class GamePanel : View
 
     private void View_AfterShow()
     {
-        DelayedFadeIn(FadeDuration);
+        
     }
 
     private void View_BeforeHide()

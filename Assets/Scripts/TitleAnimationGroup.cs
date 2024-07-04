@@ -11,6 +11,8 @@ public class TitleAnimationGroup : MonoBehaviour
 
     [SerializeField] private GameObject pointerObj;
 
+    [SerializeField] private GameObject startingPinGroup;
+
     private List <Vector3> basePosition_Alphabet = new List<Vector3> ();
 
     private Vector3 titlePosition;
@@ -50,12 +52,15 @@ public class TitleAnimationGroup : MonoBehaviour
         titleImage.transform.position = titlePosition;
 
         pointerObj.SetActive(false);
+        startingPinGroup.SetActive(false);
 
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(1.0f);
 
         for (int i = 0; i < Alphabets.Length; i++)
         {
             Alphabets[i].transform.DOMoveZ(10, 0.5f);
+
+            CameraShake.Instance.Vibration(0.5f);
 
             yield return new WaitForSeconds(0.5f);
 
@@ -67,5 +72,6 @@ public class TitleAnimationGroup : MonoBehaviour
         yield return new WaitForSeconds(0.8f);
 
         pointerObj.SetActive(true);
+        startingPinGroup.SetActive(true);
     }
 }

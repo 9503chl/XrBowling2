@@ -1,39 +1,49 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using static InteractiveObject;
+using UnityEngine.XR.Interaction.Toolkit;
 
 public class ObjectManager : MonoBehaviour
 {
     public static ObjectManager Instance;
 
-    public List <InteractiveObject> StaringPins = new List <InteractiveObject> ();
-    public List<InteractiveObject> GamePins = new List<InteractiveObject>();
+    public GameObject PinsParent;
+
+    public List<InteractiveObject> Pins = new List<InteractiveObject>();
 
     public InteractiveObject Shoes;
-    public InteractiveObject StaringBowlingBalls;
-    public InteractiveObject GameBowlingBalls;
+    public InteractiveObject BowlingBall;
 
     private void Awake()
     {
         Instance = this;
     }
 
-    public void DelayedObjectOnOff(InteractiveType type)
+    public void PinInteractiveOnOff(bool isTrue)
     {
-        switch(type)
+        for(int i = 0; i<Pins.Count; i++)
+        {
+            Pins[i].GetComponentInChildren<XRGrabInteractable>().enabled = isTrue;
+        }
+    }
+
+    public void DelayedObjectOnOff(GameObject obj)
+    {
+        InteractiveObject interactiveObject = obj.GetComponent<InteractiveObject>();
+
+        switch(interactiveObject.Type)
         {
             case InteractiveType.None: 
-                //StartCoroutine(ObjectDelayedRelease(3, ))
+
                 break;
             case InteractiveType.Shoes: 
                 
                 break;
-            case InteractiveType.StartBowling: 
+            case InteractiveType.BowlingBall: 
                 
                 break;
-            case InteractiveType.StartingPin: 
-                
+            case InteractiveType.Pin:
+                StartCoroutine(ObjectDelayedRelease(0.5f , obj));
                 break;
         }
     }

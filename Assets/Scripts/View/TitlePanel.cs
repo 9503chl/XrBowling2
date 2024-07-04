@@ -8,9 +8,9 @@ using UnityEditor;
 public class TitlePanel : View
 {
     [SerializeField] private GameObject animationGroup;
+
     private void Awake()
     {
-
         OnBeforeShow += View_BeforeShow;
         OnAfterShow += View_AfterShow;
         OnBeforeHide += View_BeforeHide;
@@ -19,13 +19,13 @@ public class TitlePanel : View
 
     private void View_BeforeShow()
     {
+        StartCoroutine(DelayedSetActive());
+        ObjectManager.Instance.PinInteractiveOnOff(true);
     }
 
     private void View_AfterShow()
     {
-        DelayedFadeIn(FadeDuration);
 
-        StartCoroutine(DelayedSetActive());
     }
 
     IEnumerator DelayedSetActive()
@@ -42,6 +42,8 @@ public class TitlePanel : View
         {
             infoManager.InfoPanelOnOff();
         }
+        animationGroup.SetActive(false);
+        ObjectManager.Instance.PinInteractiveOnOff(false);
     }
 
     private void View_AfterHide()

@@ -7,10 +7,11 @@ public class Player : MonoBehaviour
 {
     private void OnTriggerEnter(Collider other)
     {
-        InteractiveObject obj = other.GetComponent<InteractiveObject>();
-        if(obj != null)
+        InteractiveObject interactiveObj = other.GetComponent<InteractiveObject>();
+        if(interactiveObj != null)
         {
-            obj.Interaction();
+            interactiveObj.Interaction();
+            interactiveObj.ComponentOnOff(false);
         }
     }
 }

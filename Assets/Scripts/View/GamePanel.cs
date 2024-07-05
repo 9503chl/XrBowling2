@@ -8,6 +8,7 @@ public class GamePanel : View
 {
     [NonSerialized]
     private Coroutine standByCoroutine;
+
     private void Awake()
     {
         OnBeforeShow += View_BeforeShow;
@@ -33,7 +34,7 @@ public class GamePanel : View
 
     private void View_BeforeHide()
     {
-
+        PointManager.Instance.ScoreReset();
     }
 
     private void View_AfterHide()

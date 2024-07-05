@@ -5,7 +5,13 @@ using UnityEngine;
 public class InteractivePin : InteractiveObject
 {
     private Vector3 basePosition;
+
     private Quaternion baseRotation;
+
+    private Rigidbody rigidbody;
+
+    public bool isDead;
+
     private void Awake()
     {
         Type = InteractiveType.Pin;
@@ -22,5 +28,22 @@ public class InteractivePin : InteractiveObject
         InfoManager.Instance.InfoPanelOnOff();
 
         base.Interaction();
+    }
+    public void GravityOnOff(bool isTrue)
+    {
+        rigidbody.useGravity = isTrue;
+    }
+    public override void ComponentOnOff(bool isTrue)
+    {
+        base.ComponentOnOff(isTrue);
+        isDead = false;
+    }
+    private void OnTriggerEnter(Collider other)
+    {
+        Rail rail = other.GetComponent<Rail>();
+        if(rail != null)
+        {
+            isDead = true;
+        }
     }
 }

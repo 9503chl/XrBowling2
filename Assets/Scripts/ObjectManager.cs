@@ -7,12 +7,12 @@ public class ObjectManager : MonoBehaviour
 {
     public static ObjectManager Instance;
 
-    public GameObject PinsParent;
+    public GameObject PinsOriginParent;
 
-    public List<InteractiveObject> Pins = new List<InteractiveObject>();
+    public List<InteractivePin> Pins = new List<InteractivePin>();
 
-    public InteractiveObject Shoes;
-    public InteractiveObject BowlingBall;
+    public Shoes Shoes;
+    public BowlingBall BowlingBall;
 
     private void Awake()
     {
@@ -43,7 +43,7 @@ public class ObjectManager : MonoBehaviour
                 
                 break;
             case InteractiveType.Pin:
-                StartCoroutine(ObjectDelayedRelease(0.5f , obj));
+                StartCoroutine(ObjectDelayedRelease(0 , obj));
                 break;
         }
     }

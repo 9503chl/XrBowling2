@@ -1,0 +1,207 @@
+-- Merging decision tree log ---
+manifest
+ADDED from F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:2:1-34:12
+INJECTED from F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:2:1-34:12
+INJECTED from F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:2:1-34:12
+INJECTED from F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:2:1-34:12
+INJECTED from F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:2:1-34:12
+INJECTED from F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:2:1-34:12
+INJECTED from F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:2:1-34:12
+	package
+		ADDED from F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:2:101-129
+		INJECTED from F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml
+		INJECTED from F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml
+		ADDED from F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:2:1-34:12
+		INJECTED from F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml
+		ADDED from F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:2:1-34:12
+		INJECTED from F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:2:11-69
+	android:installLocation
+		ADDED from F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:2:70-100
+application
+ADDED from F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:3:3-23:17
+	android:label
+		ADDED from F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:3:16-48
+	android:icon
+		ADDED from F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:3:49-80
+	android:allowBackup
+		ADDED from F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:3:81-108
+activity#com.unity3d.player.UnityPlayerActivity
+ADDED from F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:4:5-12:16
+	android:screenOrientation
+		ADDED from F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:4:168-205
+	android:excludeFromRecents
+		ADDED from F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:4:134-167
+	android:launchMode
+		ADDED from F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:4:206-237
+	android:hardwareAccelerated
+		ADDED from F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:4:375-410
+	android:resizeableActivity
+		ADDED from F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:4:340-374
+	android:configChanges
+		ADDED from F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:4:238-339
+	android:theme
+		ADDED from F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:4:15-79
+	android:name
+		ADDED from F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:4:80-133
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER+category:name:com.oculus.intent.category.VR
+ADDED from F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:5:7-9:23
+action#android.intent.action.MAIN
+ADDED from F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:6:9-61
+	android:name
+		ADDED from F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:6:17-58
+category#android.intent.category.LAUNCHER
+ADDED from F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:7:9-69
+	android:name
+		ADDED from F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:7:19-66
+category#com.oculus.intent.category.VR
+ADDED from F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:8:9-66
+	android:name
+		ADDED from F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:8:19-63
+meta-data#android.notch_support
+ADDED from F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:10:7-78
+	android:value
+		ADDED from F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:10:55-75
+	android:name
+		ADDED from F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:10:18-54
+meta-data#com.oculus.vr.focusaware
+ADDED from F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:11:7-81
+	android:value
+		ADDED from F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:11:58-78
+	android:name
+		ADDED from F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:11:18-57
+meta-data#unityplayer.SkipPermissionsDialog
+ADDED from F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:13:5-89
+	android:value
+		ADDED from F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:13:65-86
+	android:name
+		ADDED from F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:13:16-64
+meta-data#com.samsung.android.vr.application.mode
+ADDED from F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:14:5-97
+	android:value
+		ADDED from F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:14:71-94
+	android:name
+		ADDED from F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:14:16-70
+meta-data#unity.splash-mode
+ADDED from F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:15:5-69
+	android:value
+		ADDED from F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:15:49-66
+	android:name
+		ADDED from F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:15:16-48
+meta-data#unity.splash-enable
+ADDED from F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:16:5-74
+	android:value
+		ADDED from F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:16:51-71
+	android:name
+		ADDED from F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:16:16-50
+meta-data#unity.launch-fullscreen
+ADDED from F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:17:5-78
+	android:value
+		ADDED from F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:17:55-75
+	android:name
+		ADDED from F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:17:16-54
+meta-data#unity.allow-resizable-window
+ADDED from F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:18:5-84
+	android:value
+		ADDED from F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:18:60-81
+	android:name
+		ADDED from F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:18:16-59
+meta-data#notch.config
+ADDED from F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:19:5-81
+	android:value
+		ADDED from F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:19:44-78
+	android:name
+		ADDED from F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:19:16-43
+meta-data#unity.build-id
+ADDED from F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:20:5-101
+	android:value
+		ADDED from F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:20:46-98
+	android:name
+		ADDED from F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:20:16-45
+meta-data#com.unity.xr.oculus.LowOverheadMode
+ADDED from F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:21:5-91
+	android:value
+		ADDED from F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:21:67-88
+	android:name
+		ADDED from F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:21:16-66
+meta-data#com.oculus.supportedDevices
+ADDED from F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:22:5-90
+	android:value
+		ADDED from F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:22:59-87
+	android:name
+		ADDED from F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:22:16-58
+uses-feature#android.hardware.vr.headtracking
+ADDED from F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:24:3-111
+	android:version
+		ADDED from F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:24:65-84
+	android:required
+		ADDED from F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:24:85-108
+	android:name
+		ADDED from F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:24:17-64
+uses-feature#0x00020000
+ADDED from F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:25:3-52
+	android:glEsVersion
+		ADDED from F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:25:17-49
+uses-permission#android.permission.INTERNET
+ADDED from F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:26:3-65
+	android:name
+		ADDED from F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:26:20-62
+uses-permission#android.permission.CAMERA
+ADDED from F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:27:3-63
+	android:name
+		ADDED from F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:27:20-60
+uses-feature#android.hardware.camera
+ADDED from F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:28:3-83
+	android:required
+		ADDED from F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:28:56-80
+	android:name
+		ADDED from F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:28:17-55
+uses-feature#android.hardware.camera.autofocus
+ADDED from F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:29:3-93
+	android:required
+		ADDED from F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:29:66-90
+	android:name
+		ADDED from F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:29:17-65
+uses-feature#android.hardware.camera.front
+ADDED from F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:30:3-89
+	android:required
+		ADDED from F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:30:62-86
+	android:name
+		ADDED from F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:30:17-61
+uses-feature#android.hardware.touchscreen
+ADDED from F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:31:3-88
+	android:required
+		ADDED from F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:31:61-85
+	android:name
+		ADDED from F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:31:17-60
+uses-feature#android.hardware.touchscreen.multitouch
+ADDED from F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:32:3-99
+	android:required
+		ADDED from F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:32:72-96
+	android:name
+		ADDED from F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:32:17-71
+uses-feature#android.hardware.touchscreen.multitouch.distinct
+ADDED from F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:33:3-108
+	android:required
+		ADDED from F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:33:81-105
+	android:name
+		ADDED from F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:33:17-80
+uses-sdk
+INJECTED from F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml
+INJECTED from F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml
+INJECTED from F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml
+INJECTED from F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml
+		ADDED from F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml
+		INJECTED from F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml
+		ADDED from F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml
+		INJECTED from F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml

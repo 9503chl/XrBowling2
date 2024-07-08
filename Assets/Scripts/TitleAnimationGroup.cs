@@ -11,8 +11,6 @@ public class TitleAnimationGroup : MonoBehaviour
 
     [SerializeField] private GameObject pointerObj;
 
-    [SerializeField] private GameObject startingPinGroup;
-
     private List <Vector3> basePosition_Alphabet = new List<Vector3> ();
 
     private Vector3 titlePosition;
@@ -43,6 +41,8 @@ public class TitleAnimationGroup : MonoBehaviour
     }
     IEnumerator AnimationCor()
     {
+        PointManager.Instance.PinsParent.gameObject.SetActive(false);
+
         for (int i = 0; i < Alphabets.Length; i++)
         {
             Alphabets[i].SetActive(true);
@@ -52,7 +52,6 @@ public class TitleAnimationGroup : MonoBehaviour
         titleImage.transform.position = titlePosition;
 
         pointerObj.SetActive(false);
-        startingPinGroup.SetActive(false);
 
         yield return new WaitForSeconds(1.0f);
 
@@ -72,6 +71,9 @@ public class TitleAnimationGroup : MonoBehaviour
         yield return new WaitForSeconds(0.8f);
 
         pointerObj.SetActive(true);
-        startingPinGroup.SetActive(true);
+
+        PointManager.Instance.MagnetFirstMove();
+
+        coroutine = null;
     }
 }

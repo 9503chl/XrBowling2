@@ -10,19 +10,27 @@ public class PointManager : MonoBehaviour
 
     [SerializeField] private GameObject Magnet;
     [SerializeField] private GameObject Brush;
-    [SerializeField] private GameObject PinOriginParent;
+
+    [SerializeField] private Board board;
     
     private List<InteractivePin> pins;
 
-    private GameObject PinsParent;
+    public GameObject PinParentTarget;
+
+    public Transform PinsParent;
 
     private Coroutine MagnetCor;
 
+    private bool isSpare;
+    private bool isStrike;
+
     private int currentRound = 0;
+    public int TotalPoint = 0;
 
-    private List<List<int>> roundPoints = new List<List<int>> ();
+    private List<List<int>> roundPoints = new List<List<int>>();
 
-    public int TotalPoint = 0;//총 점수
+    public float Speed;
+
 
     private void Awake()
     {
@@ -32,23 +40,12 @@ public class PointManager : MonoBehaviour
     private void Start()
     {
         pins = ObjectManager.Instance.Pins;
-        PinsParent = ObjectManager.Instance.PinsOriginParent;
+
+        PinsParent = pins[0].transform.parent.parent;
     }
 
-    public void Strike()
-    {
-        //계산 해야함.
 
-        BoardAppear();
-    }
-    public void Spare()
-    {
-        //계산 해야함.
-        
-        BoardAppear();
-    }
-
-    public void Score(int point)
+    private void Score(int point)
     {
         roundPoints[currentRound].Add(point);
 
@@ -56,9 +53,38 @@ public class PointManager : MonoBehaviour
 
         BoardAppear();
     }
-    public void BoardAppear()
+    private void BoardAppear()
     {
+        board.TextInit(roundPoints);
+    }
+    public void MagnetFirstMove()
+    {
+        StartCoroutine(FirstMagnetMove());
+    }
 
+    private IEnumerator FirstMagnetMove()
+    {
+        PinsParent.gameObject.SetActive(true);
+
+        for (int i = 0; i < pins.Count; i++)
+        {
+            pins[i].GravityOnOff(false);
+        }
+
+        PinsParent.SetParent(Magnet.transform);
+
+        Magnet.transform.DOMoveY(0.2f, Speed);
+
+        yield return new WaitForSeconds(Speed + 0.5f);
+
+        PinsParent.SetParent(PinParentTarget.transform);
+
+        for (int i = 0; i < pins.Count; i++)
+        {
+            pins[i].GravityOnOff(true);
+        }
+
+        Magnet.transform.DOMoveY(0.8f, Speed);
     }
 
     public void MagnetMove()
@@ -66,7 +92,6 @@ public class PointManager : MonoBehaviour
         if(MagnetCor == null) 
             MagnetCor = StartCoroutine(IMagentMove());
     }
-
     private IEnumerator IMagentMove()
     {
         int point = 0;
@@ -76,28 +101,41 @@ public class PointManager : MonoBehaviour
             if (pins[i].isDead) point++;
         }
 
+        if (isSpare)
+        {
+            isSpare = false;
+
+            TotalPoint += point;
+        }
+        if (isStrike)
+        {
+            TotalPoint += point;
+        }
+
+        Score(point);
+
         if (roundPoints[currentRound].Count == 1)
         {
+            isStrike = false;
+
             if (point + roundPoints[currentRound][0] == 10)
             {
-                Spare();
+                isSpare = true;
             }
-            else
-            {
-                Score(point);
-            }
+
+            currentRound++;
 
             StartCoroutine(SpareOrStrikeCommonCor());
         }
 
         else if (point == 10)
         {
-            Strike();
+            isStrike = true;
 
             StartCoroutine(SpareOrStrikeCommonCor());
         }
 
-        else
+        else//아직 10라운드 스페어 처리하면 추가 기회주는거 안 만듦
         {
             Score(point);
 
@@ -109,30 +147,31 @@ public class PointManager : MonoBehaviour
                 }
             }
 
-            Magnet.transform.DOMoveY(0.2f, 0.75f);
+            PinsParent.SetParent(Magnet.transform);
 
-            yield return new WaitForSeconds(0.75f);
+            Magnet.transform.DOMoveY(0.2f, Speed);
 
-            pins[0].transform.parent.transform.SetParent(Magnet.transform);
+            yield return new WaitForSeconds(Speed + 0.5f);
 
-            Magnet.transform.DOMoveY(0.8f, 0.75f);
+            Magnet.transform.DOMoveY(0.8f, Speed);
 
-            yield return new WaitForSeconds(0.75f);
+            yield return new WaitForSeconds(Speed);
 
             yield return StartCoroutine(IBrushMove());
 
-            Magnet.transform.DOMoveY(0.2f, 0.75f);
+            Magnet.transform.DOMoveY(0.2f, Speed);
 
-            yield return new WaitForSeconds(0.75f);
+            yield return new WaitForSeconds(Speed);
 
-            pins[0].transform.parent.transform.SetParent(PinsParent.transform);
+            PinsParent.SetParent(PinParentTarget.transform);
 
             for (int i = 0; i < pins.Count; i++)
             {
-                pins[i].GravityOnOff(true);
+                if (!pins[i].isDead)
+                    pins[i].GravityOnOff(true);
             }
 
-            Magnet.transform.DOMoveY(0.8f, 0.75f);
+            Magnet.transform.DOMoveY(0.8f, Speed);
         }
 
         MagnetCor = null;
@@ -146,25 +185,25 @@ public class PointManager : MonoBehaviour
 
         yield return StartCoroutine(IBrushMove());
 
-        pins[0].transform.parent.transform.SetParent(Magnet.transform);
+        PinsParent.SetParent(Magnet.transform);
 
         for (int i = 0; i < pins.Count; i++)
         {
             pins[i].gameObject.SetActive(true);
         }
 
-        Magnet.transform.DOMoveY(0.2f, 0.75f);
+        Magnet.transform.DOMoveY(0.2f, Speed);
 
-        yield return new WaitForSeconds(0.75f);
+        yield return new WaitForSeconds(Speed + 0.5f);
+
+        PinsParent.SetParent(PinParentTarget.transform);
 
         for (int i = 0; i < pins.Count; i++)
         {
             pins[i].GravityOnOff(true);
         }
 
-        pins[0].transform.parent.transform.SetParent(PinsParent.transform);
-
-        Magnet.transform.DOMoveY(0.8f, 0.75f);
+        Magnet.transform.DOMoveY(0.8f, Speed);
     }
 
     private IEnumerator IBrushMove()

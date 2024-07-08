@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
 using System.Runtime.CompilerServices;
+using UnityEditor;
 
 public class FadeManager : MonoBehaviour
 {
@@ -22,7 +23,10 @@ public class FadeManager : MonoBehaviour
     {
         Instance = this;
     }
-
+    private void Start()
+    {
+        fadeMat.color = Color.black;
+    }
     public bool FadeInOut()
     {
         isFadeInOut = true;

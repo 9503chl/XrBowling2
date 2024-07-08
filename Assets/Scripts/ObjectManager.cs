@@ -7,11 +7,10 @@ public class ObjectManager : MonoBehaviour
 {
     public static ObjectManager Instance;
 
-    public GameObject PinsOriginParent;
-
     public List<InteractivePin> Pins = new List<InteractivePin>();
 
     public Shoes Shoes;
+
     public BowlingBall BowlingBall;
 
     private void Awake()

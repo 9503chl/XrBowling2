@@ -137,7 +137,7 @@ public class BaseManager : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            ActiveView = activeView++;
+            ActiveView = activeView+1;
         }
     }
     private void SignalWebSocketClient_OnConnect()
@@ -193,7 +193,7 @@ public class BaseManager : MonoBehaviour
 
     public void ChangeActiveView(ViewKind targetView)
     {
-        if(targetView > ViewKind.Size)
+        if(targetView >= ViewKind.Size)
         {
             targetView = 0;
         }

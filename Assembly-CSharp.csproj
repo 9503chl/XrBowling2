@@ -78,6 +78,7 @@
     <Compile Include="Assets\Scripts\BowlingBall.cs" />
     <Compile Include="Assets\Hwang_Essential\Scripts\Unity UI\SpriteAnimator.cs" />
     <Compile Include="Assets\Hwang_Essential\Scripts\Unity UI\SpriteLoader.cs" />
+    <Compile Include="Assets\Scripts\Floor.cs" />
     <Compile Include="Assets\Hwang_Essential\Scripts\Unity UI\TimeScaledAudio.cs" />
     <Compile Include="Assets\Scripts\View\NormalPanel.cs" />
     <Compile Include="Assets\Scripts\SerialPort\Win32CE\WinStream.cs" />
@@ -145,6 +146,7 @@
     <Compile Include="Assets\Scripts\SerialPort\Win32CE\CommAPI.cs" />
     <Compile Include="Assets\Developer_Choe\Scripts\3D\Polygon.cs" />
     <Compile Include="Assets\Hwang_Essential\Scripts\Unity UI\TweenPosition.cs" />
+    <Compile Include="Assets\Scripts\Rail.cs" />
     <Compile Include="Assets\Hwang_Experimental\Scripts\Runtime\Texture2DUtility.cs" />
     <Compile Include="Assets\Scripts\SerialPort\SerialPortEnums.cs" />
     <Compile Include="Assets\Hwang_Essential\Scripts\Standalone\CommandLineArgs.cs" />
@@ -170,6 +172,7 @@
     <Compile Include="Assets\Hwang_Essential\Scripts\Unity UI\TextAssetLoader.cs" />
     <Compile Include="Assets\Hwang_Essential\Scripts\Unity UI\Fade.cs" />
     <Compile Include="Assets\Developer_Choe\Scripts\2D\QrCodes.cs" />
+    <Compile Include="Assets\Scripts\Board.cs" />
     <Compile Include="Assets\Developer_Choe\Scripts\2D\QRCodeGeneraterTarget.cs" />
     <Compile Include="Assets\Developer_Choe\Scripts\3D\MeshComponent.cs" />
     <Compile Include="Assets\Hwang_Experimental\Scripts\Runtime\ScrollRectExtensions.cs" />
@@ -177,9 +180,6 @@
     <Compile Include="Assets\Hwang_Experimental\Scripts\Runtime\WebUri.cs" />
     <Compile Include="Assets\Hwang_Essential\Scripts\Unity UI\TweenImageFill.cs" />
     <Compile Include="Assets\Hwang_Essential\Scripts\Unity UI\DragToMove.cs" />
-    <Compile Include="Assets\Scripts\Floor.cs" />
-    <Compile Include="Assets\Scripts\Rail.cs" />
-    <Compile Include="Assets\Scripts\Board.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

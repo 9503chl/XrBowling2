@@ -1,0 +1,186 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.unity3d.player"
+4    android:installLocation="auto"
+5    android:versionCode="1"
+6    android:versionName="1.0" >
+7
+8    <uses-sdk
+9        android:minSdkVersion="23"
+9-->F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml
+10        android:targetSdkVersion="30" />
+10-->F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml
+11
+12    <uses-feature
+12-->F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:24:3-111
+13        android:name="android.hardware.vr.headtracking"
+13-->F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:24:17-64
+14        android:required="true"
+14-->F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:24:85-108
+15        android:version="1" />
+15-->F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:24:65-84
+16    <uses-feature android:glEsVersion="0x00020000" />
+16-->F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:25:3-52
+16-->F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:25:17-49
+17
+18    <uses-permission android:name="android.permission.INTERNET" />
+18-->F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:26:3-65
+18-->F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:26:20-62
+19    <uses-permission android:name="android.permission.CAMERA" />
+19-->F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:27:3-63
+19-->F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:27:20-60
+20
+21    <uses-feature
+21-->F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:28:3-83
+22        android:name="android.hardware.camera"
+22-->F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:28:17-55
+23        android:required="false" />
+23-->F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:28:56-80
+24    <uses-feature
+24-->F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:29:3-93
+25        android:name="android.hardware.camera.autofocus"
+25-->F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:29:17-65
+26        android:required="false" />
+26-->F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:29:66-90
+27    <uses-feature
+27-->F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:30:3-89
+28        android:name="android.hardware.camera.front"
+28-->F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:30:17-61
+29        android:required="false" />
+29-->F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:30:62-86
+30    <uses-feature
+30-->F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:31:3-88
+31        android:name="android.hardware.touchscreen"
+31-->F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:31:17-60
+32        android:required="false" />
+32-->F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:31:61-85
+33    <uses-feature
+33-->F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:32:3-99
+34        android:name="android.hardware.touchscreen.multitouch"
+34-->F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:32:17-71
+35        android:required="false" />
+35-->F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:32:72-96
+36    <uses-feature
+36-->F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:33:3-108
+37        android:name="android.hardware.touchscreen.multitouch.distinct"
+37-->F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:33:17-80
+38        android:required="false" />
+38-->F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:33:81-105
+39
+40    <application
+40-->F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:3:3-23:17
+41        android:allowBackup="false"
+41-->F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:3:81-108
+42        android:icon="@mipmap/app_icon"
+42-->F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:3:49-80
+43        android:label="@string/app_name" >
+43-->F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:3:16-48
+44        <activity
+44-->F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:4:5-12:16
+45            android:name="com.unity3d.player.UnityPlayerActivity"
+45-->F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:4:80-133
+46            android:configChanges="keyboard|keyboardHidden|navigation|orientation|screenLayout|screenSize|uiMode"
+46-->F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:4:238-339
+47            android:excludeFromRecents="true"
+47-->F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:4:134-167
+48            android:hardwareAccelerated="false"
+48-->F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:4:375-410
+49            android:launchMode="singleTask"
+49-->F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:4:206-237
+50            android:resizeableActivity="false"
+50-->F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:4:340-374
+51            android:screenOrientation="landscape"
+51-->F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:4:168-205
+52            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" >
+52-->F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:4:15-79
+53            <intent-filter>
+53-->F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:5:7-9:23
+54                <action android:name="android.intent.action.MAIN" />
+54-->F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:6:9-61
+54-->F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:6:17-58
+55
+56                <category android:name="android.intent.category.LAUNCHER" />
+56-->F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:7:9-69
+56-->F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:7:19-66
+57                <category android:name="com.oculus.intent.category.VR" />
+57-->F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:8:9-66
+57-->F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:8:19-63
+58            </intent-filter>
+59
+60            <meta-data
+60-->F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:10:7-78
+61                android:name="android.notch_support"
+61-->F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:10:18-54
+62                android:value="true" />
+62-->F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:10:55-75
+63            <meta-data
+63-->F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:11:7-81
+64                android:name="com.oculus.vr.focusaware"
+64-->F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:11:18-57
+65                android:value="true" />
+65-->F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:11:58-78
+66        </activity>
+67
+68        <meta-data
+68-->F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:13:5-89
+69            android:name="unityplayer.SkipPermissionsDialog"
+69-->F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:13:16-64
+70            android:value="false" />
+70-->F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:13:65-86
+71        <meta-data
+71-->F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:14:5-97
+72            android:name="com.samsung.android.vr.application.mode"
+72-->F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:14:16-70
+73            android:value="vr_only" />
+73-->F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:14:71-94
+74        <meta-data
+74-->F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:15:5-69
+75            android:name="unity.splash-mode"
+75-->F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:15:16-48
+76            android:value="0" />
+76-->F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:15:49-66
+77        <meta-data
+77-->F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:16:5-74
+78            android:name="unity.splash-enable"
+78-->F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:16:16-50
+79            android:value="True" />
+79-->F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:16:51-71
+80        <meta-data
+80-->F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:17:5-78
+81            android:name="unity.launch-fullscreen"
+81-->F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:17:16-54
+82            android:value="True" />
+82-->F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:17:55-75
+83        <meta-data
+83-->F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:18:5-84
+84            android:name="unity.allow-resizable-window"
+84-->F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:18:16-59
+85            android:value="False" />
+85-->F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:18:60-81
+86        <meta-data
+86-->F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:19:5-81
+87            android:name="notch.config"
+87-->F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:19:16-43
+88            android:value="portrait|landscape" />
+88-->F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:19:44-78
+89        <meta-data
+89-->F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:20:5-101
+90            android:name="unity.build-id"
+90-->F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:20:16-45
+91            android:value="6b2c2ef5-8e85-4985-9cc4-36cc6f91e501" />
+91-->F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:20:46-98
+92        <meta-data
+92-->F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:21:5-91
+93            android:name="com.unity.xr.oculus.LowOverheadMode"
+93-->F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:21:16-66
+94            android:value="false" />
+94-->F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:21:67-88
+95        <meta-data
+95-->F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:22:5-90
+96            android:name="com.oculus.supportedDevices"
+96-->F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:22:16-58
+97            android:value="quest|quest2" />
+97-->F:\Unity\Private\XrBowling\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:22:59-87
+98    </application>
+99
+100</manifest>

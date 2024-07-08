@@ -23,8 +23,6 @@ public class InteractiveObject : MonoBehaviour
 
     public virtual void Interaction()
     {
-        Debug.Log(string.Format("{0} Triggered", gameObject.name));
-
         ObjectManager.Instance.DelayedObjectOnOff(gameObject);
     }
 
@@ -32,6 +30,7 @@ public class InteractiveObject : MonoBehaviour
     {
         tweenRotation.enabled = isTrue;
         tweenPosition.enabled = isTrue;
+
         grabInteractable.enabled = isTrue;
     }
 }

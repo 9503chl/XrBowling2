@@ -8,16 +8,20 @@ public class InteractivePin : InteractiveObject
 
     private Quaternion baseRotation;
 
-    private Rigidbody rigidbody;
+    private Rigidbody _rigidbody;
 
     public bool isDead;
 
     private void Awake()
     {
         Type = InteractiveType.Pin;
+
+        _rigidbody = GetComponent<Rigidbody>();
+
         basePosition = transform.position;
         baseRotation = transform.rotation;
     }
+
     private void OnEnable()
     {
         transform.position = basePosition;
@@ -31,7 +35,7 @@ public class InteractivePin : InteractiveObject
     }
     public void GravityOnOff(bool isTrue)
     {
-        rigidbody.useGravity = isTrue;
+        _rigidbody.useGravity = isTrue;
     }
     public override void ComponentOnOff(bool isTrue)
     {
@@ -41,6 +45,7 @@ public class InteractivePin : InteractiveObject
     private void OnTriggerEnter(Collider other)
     {
         Rail rail = other.GetComponent<Rail>();
+
         if(rail != null)
         {
             isDead = true;

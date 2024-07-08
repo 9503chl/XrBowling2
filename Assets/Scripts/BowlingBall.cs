@@ -6,7 +6,9 @@ using UnityEngine;
 public class BowlingBall : InteractiveObject
 {
     public Rigidbody _Rigidbody;
+
     public float Speed;
+
     private void Awake()
     {
         Type = InteractiveType.BowlingBall;
@@ -25,5 +27,11 @@ public class BowlingBall : InteractiveObject
         {
             ComponentOnOff(false);
         }
+    }
+    public override void ComponentOnOff(bool isTrue)
+    {
+        base.ComponentOnOff(isTrue);
+
+        _Rigidbody.useGravity = !isTrue;
     }
 }

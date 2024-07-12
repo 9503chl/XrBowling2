@@ -11,14 +11,14 @@ public class InteractiveObject : MonoBehaviour
     private TweenRotation tweenRotation;
     private TweenPosition tweenPosition;
 
-    private XRGrabInteractable grabInteractable;
+    public XRGrabInteractable grabInteractable;
 
-    private void Awake()
+    public virtual void OnAwake()
     {
-        tweenRotation = GetComponent<TweenRotation>();
-        tweenPosition = GetComponent<TweenPosition>();
-        
-        grabInteractable = GetComponent<XRGrabInteractable>();
+        tweenRotation = GetComponentInChildren<TweenRotation>();
+        tweenPosition = GetComponentInChildren<TweenPosition>();
+
+        grabInteractable = GetComponentInChildren<XRGrabInteractable>();
     }
 
     public virtual void Interaction()
@@ -28,9 +28,23 @@ public class InteractiveObject : MonoBehaviour
 
     public virtual void ComponentOnOff(bool isTrue)
     {
-        tweenRotation.enabled = isTrue;
-        tweenPosition.enabled = isTrue;
+        if (tweenRotation!= null)
+        {
+            tweenRotation = GetComponentInChildren<TweenRotation>();
 
-        grabInteractable.enabled = isTrue;
+            tweenRotation.enabled = isTrue;
+        }
+        if (tweenPosition!= null)
+        {
+            tweenPosition = GetComponentInChildren<TweenPosition>();
+
+            tweenPosition.enabled = isTrue;
+        }
+        if(grabInteractable!= null)
+        {
+            grabInteractable = GetComponentInChildren<XRGrabInteractable>();
+
+            //grabInteractable.enabled = isTrue;
+        }
     }
 }

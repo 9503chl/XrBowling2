@@ -3,28 +3,40 @@
   "WorkspaceRootPath": "F:\\Unity\\Private\\XrBowling\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DDB8C8F2-1480-7327-645E-AEF80BA1341F}|Assembly-CSharp.csproj|f:\\unity\\private\\xrbowling\\assets\\scripts\\view\\basemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DDB8C8F2-1480-7327-645E-AEF80BA1341F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\view\\basemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DDB8C8F2-1480-7327-645E-AEF80BA1341F}|Assembly-CSharp.csproj|F:\\Unity\\Private\\XrBowling\\assets\\scripts\\rail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDB8C8F2-1480-7327-645E-AEF80BA1341F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\rail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDB8C8F2-1480-7327-645E-AEF80BA1341F}|Assembly-CSharp.csproj|F:\\Unity\\Private\\XrBowling\\assets\\scripts\\bowlingball.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDB8C8F2-1480-7327-645E-AEF80BA1341F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\bowlingball.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DDB8C8F2-1480-7327-645E-AEF80BA1341F}|Assembly-CSharp.csproj|f:\\unity\\private\\xrbowling\\assets\\scripts\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DDB8C8F2-1480-7327-645E-AEF80BA1341F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DDB8C8F2-1480-7327-645E-AEF80BA1341F}|Assembly-CSharp.csproj|F:\\Unity\\Private\\XrBowling\\assets\\scripts\\objectmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DDB8C8F2-1480-7327-645E-AEF80BA1341F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\objectmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DDB8C8F2-1480-7327-645E-AEF80BA1341F}|Assembly-CSharp.csproj|F:\\Unity\\Private\\XrBowling\\assets\\scripts\\view\\basemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDB8C8F2-1480-7327-645E-AEF80BA1341F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\view\\basemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDB8C8F2-1480-7327-645E-AEF80BA1341F}|Assembly-CSharp.csproj|F:\\Unity\\Private\\XrBowling\\assets\\scripts\\board.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDB8C8F2-1480-7327-645E-AEF80BA1341F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\board.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DDB8C8F2-1480-7327-645E-AEF80BA1341F}|Assembly-CSharp.csproj|F:\\Unity\\Private\\XrBowling\\assets\\scripts\\pointmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DDB8C8F2-1480-7327-645E-AEF80BA1341F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\pointmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DDB8C8F2-1480-7327-645E-AEF80BA1341F}|Assembly-CSharp.csproj|F:\\Unity\\Private\\XrBowling\\assets\\scripts\\view\\titlepanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DDB8C8F2-1480-7327-645E-AEF80BA1341F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\view\\titlepanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DDB8C8F2-1480-7327-645E-AEF80BA1341F}|Assembly-CSharp.csproj|F:\\Unity\\Private\\XrBowling\\assets\\scripts\\edgewall.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDB8C8F2-1480-7327-645E-AEF80BA1341F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\edgewall.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DDB8C8F2-1480-7327-645E-AEF80BA1341F}|Assembly-CSharp.csproj|F:\\Unity\\Private\\XrBowling\\assets\\scripts\\bowlingball.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DDB8C8F2-1480-7327-645E-AEF80BA1341F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\bowlingball.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DDB8C8F2-1480-7327-645E-AEF80BA1341F}|Assembly-CSharp.csproj|F:\\Unity\\Private\\XrBowling\\assets\\scripts\\objectmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDB8C8F2-1480-7327-645E-AEF80BA1341F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\objectmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDB8C8F2-1480-7327-645E-AEF80BA1341F}|Assembly-CSharp.csproj|F:\\Unity\\Private\\XrBowling\\assets\\scripts\\interactiveobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDB8C8F2-1480-7327-645E-AEF80BA1341F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\interactiveobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -39,80 +51,113 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "BaseManager.cs",
-              "DocumentMoniker": "F:\\Unity\\Private\\XrBowling\\Assets\\Scripts\\View\\BaseManager.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\View\\BaseManager.cs",
-              "ToolTip": "F:\\Unity\\Private\\XrBowling\\Assets\\Scripts\\View\\BaseManager.cs",
-              "RelativeToolTip": "Assets\\Scripts\\View\\BaseManager.cs",
-              "ViewState": "AQIAAI8AAAAAAAAAAAAmwNkAAAAdAAAA",
+              "Title": "Rail.cs",
+              "DocumentMoniker": "F:\\Unity\\Private\\XrBowling\\Assets\\Scripts\\Rail.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Rail.cs",
+              "ToolTip": "F:\\Unity\\Private\\XrBowling\\Assets\\Scripts\\Rail.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Rail.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-04T08:49:46.838Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Player.cs",
-              "DocumentMoniker": "F:\\Unity\\Private\\XrBowling\\Assets\\Scripts\\Player.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Player.cs",
-              "ToolTip": "F:\\Unity\\Private\\XrBowling\\Assets\\Scripts\\Player.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Player.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAADwvw0AAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-04T08:47:47.734Z",
+              "WhenOpened": "2024-07-12T01:30:53.512Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "TitlePanel.cs",
-              "DocumentMoniker": "F:\\Unity\\Private\\XrBowling\\Assets\\Scripts\\View\\TitlePanel.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\View\\TitlePanel.cs",
-              "ToolTip": "F:\\Unity\\Private\\XrBowling\\Assets\\Scripts\\View\\TitlePanel.cs",
-              "RelativeToolTip": "Assets\\Scripts\\View\\TitlePanel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAADwvzQAAAABAAAA",
+              "Title": "Board.cs",
+              "DocumentMoniker": "F:\\Unity\\Private\\XrBowling\\Assets\\Scripts\\Board.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Board.cs",
+              "ToolTip": "F:\\Unity\\Private\\XrBowling\\Assets\\Scripts\\Board.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Board.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-04T06:55:01.264Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-12T02:05:52.582Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "PointManager.cs",
-              "DocumentMoniker": "F:\\Unity\\Private\\XrBowling\\Assets\\Scripts\\PointManager.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\PointManager.cs",
-              "ToolTip": "F:\\Unity\\Private\\XrBowling\\Assets\\Scripts\\PointManager.cs",
-              "RelativeToolTip": "Assets\\Scripts\\PointManager.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAA4AAAA",
+              "Title": "BaseManager.cs",
+              "DocumentMoniker": "F:\\Unity\\Private\\XrBowling\\Assets\\Scripts\\View\\BaseManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\View\\BaseManager.cs",
+              "ToolTip": "F:\\Unity\\Private\\XrBowling\\Assets\\Scripts\\View\\BaseManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\View\\BaseManager.cs",
+              "ViewState": "AQIAALMAAAAAAAAAAAAswMIAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-04T05:23:49.055Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-12T01:43:52.947Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "EdgeWall.cs",
+              "DocumentMoniker": "F:\\Unity\\Private\\XrBowling\\Assets\\Scripts\\EdgeWall.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\EdgeWall.cs",
+              "ToolTip": "F:\\Unity\\Private\\XrBowling\\Assets\\Scripts\\EdgeWall.cs",
+              "RelativeToolTip": "Assets\\Scripts\\EdgeWall.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAADwvxYAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-12T01:41:12.693Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "ObjectManager.cs",
-              "DocumentMoniker": "F:\\Unity\\Private\\XrBowling\\Assets\\Scripts\\ObjectManager.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\ObjectManager.cs",
-              "ToolTip": "F:\\Unity\\Private\\XrBowling\\Assets\\Scripts\\ObjectManager.cs",
-              "RelativeToolTip": "Assets\\Scripts\\ObjectManager.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAADAAAAAFAAAA",
+              "Title": "Player.cs",
+              "DocumentMoniker": "F:\\Unity\\Private\\XrBowling\\Assets\\Scripts\\Player.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Player.cs",
+              "ToolTip": "F:\\Unity\\Private\\XrBowling\\Assets\\Scripts\\Player.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Player.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAADwvxoAAABKAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-04T05:23:10.654Z",
+              "WhenOpened": "2024-07-11T07:29:50.353Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
+              "Title": "PointManager.cs",
+              "DocumentMoniker": "F:\\Unity\\Private\\XrBowling\\Assets\\Scripts\\PointManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\PointManager.cs",
+              "ToolTip": "F:\\Unity\\Private\\XrBowling\\Assets\\Scripts\\PointManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\PointManager.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAswD4AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-11T05:03:58.515Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "BowlingBall.cs",
               "DocumentMoniker": "F:\\Unity\\Private\\XrBowling\\Assets\\Scripts\\BowlingBall.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\BowlingBall.cs",
               "ToolTip": "F:\\Unity\\Private\\XrBowling\\Assets\\Scripts\\BowlingBall.cs",
               "RelativeToolTip": "Assets\\Scripts\\BowlingBall.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAADwvwwAAAA4AAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAwAAAAYAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-04T05:22:17.847Z",
+              "WhenOpened": "2024-07-09T04:45:22.402Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ObjectManager.cs",
+              "DocumentMoniker": "F:\\Unity\\Private\\XrBowling\\Assets\\Scripts\\ObjectManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\ObjectManager.cs",
+              "ToolTip": "F:\\Unity\\Private\\XrBowling\\Assets\\Scripts\\ObjectManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\ObjectManager.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEgAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-09T02:07:09.971Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "InteractiveObject.cs",
+              "DocumentMoniker": "F:\\Unity\\Private\\XrBowling\\Assets\\Scripts\\InteractiveObject.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\InteractiveObject.cs",
+              "ToolTip": "F:\\Unity\\Private\\XrBowling\\Assets\\Scripts\\InteractiveObject.cs",
+              "RelativeToolTip": "Assets\\Scripts\\InteractiveObject.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwDIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-09T01:39:20.838Z"
             }
           ]
         }

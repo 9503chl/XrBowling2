@@ -2,18 +2,24 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class BowlingBall : InteractiveObject
 {
-    public Rigidbody _Rigidbody;
+    public Vector3 TargetVector;
 
-    public float Speed;
+    public Rigidbody _Rigidbody;
 
     private void Awake()
     {
         Type = InteractiveType.BowlingBall;
 
         _Rigidbody = GetComponentInChildren<Rigidbody>();
+    }
+
+    private void Start()
+    {
+        OnAwake();
     }
     public override void Interaction()
     {
@@ -25,13 +31,9 @@ public class BowlingBall : InteractiveObject
         }
         else
         {
-            ComponentOnOff(false);
-        }
-    }
-    public override void ComponentOnOff(bool isTrue)
-    {
-        base.ComponentOnOff(isTrue);
+            _Rigidbody.useGravity = true;
 
-        _Rigidbody.useGravity = !isTrue;
+            base.ComponentOnOff(false);
+        }
     }
 }

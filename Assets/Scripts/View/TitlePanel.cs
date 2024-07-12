@@ -2,8 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using DG.Tweening;
-using UnityEditor;
 
 public class TitlePanel : View
 {
@@ -22,17 +20,16 @@ public class TitlePanel : View
     private void View_BeforeShow()
     {
         StartCoroutine(DelayedSetActive());
-        ObjectManager.Instance.PinInteractiveOnOff(true);
-
-        for(int i = 0; i <targetsOnOff.Length; i++)
-        {
-            targetsOnOff[i].SetActive(true);
-        }
     }
 
     private void View_AfterShow()
     {
+        ObjectManager.Instance.PinInteractiveOnOff(true);
 
+        for (int i = 0; i < targetsOnOff.Length; i++)
+        {
+            targetsOnOff[i].SetActive(true);
+        }
     }
 
     IEnumerator DelayedSetActive()
@@ -45,14 +42,17 @@ public class TitlePanel : View
     private void View_BeforeHide()
     {
         InfoManager infoManager = InfoManager.Instance;
+
         if (infoManager.isOn)
         {
             infoManager.InfoPanelOnOff();
         }
+
         animationGroup.SetActive(false);
+
         ObjectManager.Instance.PinInteractiveOnOff(false);
 
-         for(int i = 0; i <targetsOnOff.Length; i++)
+        for(int i = 0; i <targetsOnOff.Length; i++)
         {
             targetsOnOff[i].SetActive(false);
         }

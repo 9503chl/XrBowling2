@@ -29,21 +29,23 @@ public class ObjectManager : MonoBehaviour
     public void DelayedObjectOnOff(GameObject obj)
     {
         InteractiveObject interactiveObject = obj.GetComponent<InteractiveObject>();
-
-        switch(interactiveObject.Type)
+        if(interactiveObject != null)
         {
-            case InteractiveType.None: 
+            switch (interactiveObject.Type)
+            {
+                case InteractiveType.None:
 
-                break;
-            case InteractiveType.Shoes: 
-                
-                break;
-            case InteractiveType.BowlingBall: 
-                
-                break;
-            case InteractiveType.Pin:
-                StartCoroutine(ObjectDelayedRelease(0 , obj));
-                break;
+                    break;
+                case InteractiveType.Shoes:
+
+                    break;
+                case InteractiveType.BowlingBall:
+
+                    break;
+                case InteractiveType.Pin:
+                    StartCoroutine(ObjectDelayedRelease(0.25f, obj));
+                    break;
+            }
         }
     }
 

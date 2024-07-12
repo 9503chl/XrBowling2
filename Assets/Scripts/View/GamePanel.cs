@@ -27,18 +27,18 @@ public class GamePanel : View
             standByCoroutine = null;
         }
         standByCoroutine = StartCoroutine(Standby());
+    }
 
+    private void View_AfterShow()
+    {
+        PointManager.Instance.PinsParent.gameObject.SetActive(false);
+
+        PointManager.Instance.MagnetFirstMove();
 
         for (int i = 0; i < targetsOnOff.Length; i++)
         {
             targetsOnOff[i].SetActive(true);
         }
-        PointManager.Instance.PinsParent.gameObject.SetActive(false);
-    }
-
-    private void View_AfterShow()
-    {
-        PointManager.Instance.MagnetFirstMove();
     }
 
     private void View_BeforeHide()
@@ -62,6 +62,7 @@ public class GamePanel : View
         while (isActiveAndEnabled)
         {
             yield return new WaitForSeconds(60f);
+
             BaseManager.Instance.ActiveView = ViewKind.Title;
         }
     }

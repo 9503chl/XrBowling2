@@ -4,6 +4,26 @@ using UnityEngine;
 using DG.Tweening;
 using UnityEngine.UIElements;
 
+public class PointSystem
+{
+    public List<int> Points = new List<int>();
+
+    public int RoundPoint;
+
+    public void PointAdd(int point)
+    {
+        Points.Add(point);
+
+        RoundPoint += point;
+    }
+
+    public void PointReset()
+    {
+        Points.Clear();
+        RoundPoint = 0;
+    }
+}
+
 public class PointManager : MonoBehaviour
 {
     public static PointManager Instance;
@@ -25,9 +45,10 @@ public class PointManager : MonoBehaviour
     private bool isStrike;
 
     private int currentRound = 0;
+
     public int TotalPoint = 0;
 
-    private List<List<int>> roundPoints = new List<List<int>>();
+    private Dictionary<int,PointSystem> rountPointsDic = new Dictionary<int,PointSystem>();
 
     public float Speed;
 
@@ -35,6 +56,11 @@ public class PointManager : MonoBehaviour
     private void Awake()
     {
         Instance = this;
+
+        for(int i= 0; i<10; i++)
+        {
+            rountPointsDic.Add(i, new PointSystem());
+        }
     }
 
     private void Start()
@@ -47,7 +73,7 @@ public class PointManager : MonoBehaviour
 
     private void Score(int point)
     {
-        roundPoints[currentRound].Add(point);
+        rountPointsDic[currentRound].PointAdd(point);
 
         TotalPoint += point;
 
@@ -55,7 +81,7 @@ public class PointManager : MonoBehaviour
     }
     private void BoardAppear()
     {
-        board.TextInit(roundPoints);
+        board.TextInit(rountPointsDic, TotalPoint);
     }
     public void MagnetFirstMove()
     {
@@ -114,11 +140,11 @@ public class PointManager : MonoBehaviour
 
         Score(point);
 
-        if (roundPoints[currentRound].Count == 1)
+        if (rountPointsDic[currentRound].Points.Count == 1)
         {
             isStrike = false;
 
-            if (point + roundPoints[currentRound][0] == 10)
+            if (point + rountPointsDic[currentRound].Points[0] == 10)
             {
                 isSpare = true;
             }
@@ -221,7 +247,10 @@ public class PointManager : MonoBehaviour
 
     public void ScoreReset()
     {
-        roundPoints.Clear();
+        foreach(KeyValuePair<int,PointSystem> pair in rountPointsDic)
+        {
+            pair.Value.PointReset();
+        }
 
         TotalPoint = 0;
     }

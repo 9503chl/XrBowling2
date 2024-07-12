@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using DG.Tweening;
+using UnityEditor;
+using System;
 
 public class Board : MonoBehaviour
 {
@@ -28,24 +30,35 @@ public class Board : MonoBehaviour
         canvasGroup = GetComponent<CanvasGroup>();
     }
 
-    public void TextInit(List<List<int>> RoundScores)
+    public void TextInit(Dictionary<int,PointSystem> PointsDic, int totalSum)
     {
-        int TotalSum = 0;
-
-        for(int i = 0; i<RoundScores.Count; i++)
+        foreach(KeyValuePair<int ,PointSystem> pair in PointsDic)
         {
-            int Sum = 0;
-            for(int j = 0; j< RoundScores[i].Count; j++)
-            {
-                FirstRoundText[j].text = RoundScores[i][j].ToString();
-                Sum += RoundScores[i][j];
-            }
-            SumTexts[i].text = Sum.ToString();
+            List<Text> textList = null;
 
-            TotalSum += Sum;
+            switch (pair.Key)
+            {
+                case 0: textList = FirstRoundText; break;
+                case 1: textList = SecondRoundText; break;
+                case 2: textList = ThirdRoundText; break;
+                case 3: textList = FourthRoundText; break;
+                case 4: textList = FifthRoundText; break;
+                case 5: textList = SixthRoundText; break;
+                case 6: textList = SeventhRoundText; break;
+                case 7: textList = EighthRoundText; break;
+                case 8: textList = NinethRoundText; break;
+                case 9: textList = TenthRoundText; break;
+            }
+
+            for (int i = 0;i< pair.Value.Points.Count; i++)
+            {
+                textList[i].text = pair.Value.Points[i].ToString(); ;
+            }
+
+            SumTexts[pair.Key].text = pair.Value.RoundPoint.ToString();
         }
 
-        TotalText.text = TotalSum.ToString();
+        TotalText.text = totalSum.ToString();
 
         StartCoroutine(FadeInOut());
     }

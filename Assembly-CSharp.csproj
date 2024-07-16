@@ -121,6 +121,7 @@
     <Compile Include="Assets\Scripts\SerialPort\NetStream.cs" />
     <Compile Include="Assets\Scripts\View\BaseManager.cs" />
     <Compile Include="Assets\Hwang_Experimental\Scripts\Runtime\SystemLanguageExtensions.cs" />
+    <Compile Include="Assets\Developer_Choe\Scripts\Math\BezialCurve.cs" />
     <Compile Include="Assets\Hwang_Experimental\Scripts\Unity UI\SceneLoader.cs" />
     <Compile Include="Assets\Hwang_Experimental\Scripts\Unity UI\ClassicTooltip.cs" />
     <Compile Include="Assets\Hwang_Experimental\Scripts\Unity UI\ScreenshotSaver.cs" />
@@ -179,8 +180,6 @@
     <Compile Include="Assets\Hwang_Experimental\Scripts\Runtime\WebUri.cs" />
     <Compile Include="Assets\Hwang_Essential\Scripts\Unity UI\TweenImageFill.cs" />
     <Compile Include="Assets\Hwang_Essential\Scripts\Unity UI\DragToMove.cs" />
-    <Compile Include="Assets\Developer_Choe\Scripts\Math\BezialCurve.cs" />
-    <Compile Include="Assets\Scripts\ThrowingTarget.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

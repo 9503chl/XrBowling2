@@ -8,7 +8,9 @@ public class InteractivePin : InteractiveObject
 
     private Quaternion baseRotation;
 
-    private Rigidbody _rigidbody;
+    private Rigidbody rigidbody;
+
+    private Collider collider;
 
     public bool isDead;
 
@@ -16,7 +18,8 @@ public class InteractivePin : InteractiveObject
     {
         Type = InteractiveType.Pin;
 
-        _rigidbody = GetComponent<Rigidbody>();
+        rigidbody = GetComponent<Rigidbody>();
+        collider = GetComponent<Collider>();
 
         basePosition = transform.position;
         baseRotation = transform.rotation;
@@ -26,6 +29,7 @@ public class InteractivePin : InteractiveObject
     {
         transform.position = basePosition;
         transform.rotation = baseRotation;
+        isDead = false;
     }
     public override void Interaction()
     {
@@ -35,12 +39,11 @@ public class InteractivePin : InteractiveObject
     }
     public void GravityOnOff(bool isTrue)
     {
-        _rigidbody.useGravity = isTrue;
+        rigidbody.useGravity = isTrue;
     }
     public override void ComponentOnOff(bool isTrue)
     {
         base.ComponentOnOff(isTrue);
-        isDead = false;
     }
     private void OnTriggerEnter(Collider other)
     {

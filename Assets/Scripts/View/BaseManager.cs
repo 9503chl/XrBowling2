@@ -139,10 +139,10 @@ public class BaseManager : MonoBehaviour
         {
             ActiveView = activeView+1;
         }
-        //if (Input.GetKeyDown(KeyCode.Q))
-        //{
-        //    PointManager.Instance.MagnetMove();
-        //}
+        if (Input.GetKeyDown(KeyCode.Q))
+        {
+            PointManager.Instance.MagnetMove();
+        }
     }
     private void SignalWebSocketClient_OnConnect()
     {

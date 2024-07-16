@@ -69,6 +69,6 @@ public class Board : MonoBehaviour
 
         yield return new WaitForSeconds(3);
 
-        canvasGroup.DOFade(1, 0.5f);
+        canvasGroup.DOFade(0, 0.5f);
     }
 }

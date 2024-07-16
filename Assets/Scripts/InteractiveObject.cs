@@ -44,7 +44,7 @@ public class InteractiveObject : MonoBehaviour
         {
             grabInteractable = GetComponentInChildren<XRGrabInteractable>();
 
-            //grabInteractable.enabled = isTrue;
+            grabInteractable.enabled = isTrue;
         }
     }
 }

@@ -140,7 +140,7 @@ public class PointManager : MonoBehaviour
 
         Score(point);
 
-        if (rountPointsDic[currentRound].Points.Count == 1)
+        if (rountPointsDic[currentRound].Points.Count == 2)
         {
             isStrike = false;
 
@@ -163,8 +163,6 @@ public class PointManager : MonoBehaviour
 
         else//아직 10라운드 스페어 처리하면 추가 기회주는거 안 만듦
         {
-            Score(point);
-
             for (int i = 0; i < pins.Count; i++)
             {
                 if (!pins[i].isDead)
@@ -199,7 +197,6 @@ public class PointManager : MonoBehaviour
 
             Magnet.transform.DOMoveY(0.8f, Speed);
         }
-
         MagnetCor = null;
     }
     private IEnumerator SpareOrStrikeCommonCor()
@@ -207,6 +204,7 @@ public class PointManager : MonoBehaviour
         for (int i = 0; i < pins.Count; i++)
         {
             pins[i].GravityOnOff(false);
+            pins[i].gameObject.SetActive(false);
         }
 
         yield return StartCoroutine(IBrushMove());
@@ -242,7 +240,13 @@ public class PointManager : MonoBehaviour
 
         yield return new WaitForSeconds(0.75f);
 
-        Brush.transform.DOLocalMove(new Vector3(0, 0.825f, 5.5f), 0.5f);
+        Brush.transform.DOLocalMoveZ(5.5f, 0.5f);
+
+        yield return new WaitForSeconds(0.5f);
+
+        Brush.transform.DOLocalMoveY(0.825f, 0.5f);
+
+        yield return new WaitForSeconds(0.5f);
     }
 
     public void ScoreReset()

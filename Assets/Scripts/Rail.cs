@@ -14,7 +14,7 @@ public class Rail : MonoBehaviour
             StartCoroutine(OiledRailCoroutine(bowlingBall.TargetVector, collision.gameObject.transform.rotation.z));
         }
     }
-    private IEnumerator OiledRailCoroutine(Vector3 target, float Rotation)
+    private IEnumerator OiledRailCoroutine(Vector3 originTarget, float rotation)
     //Hand에 타겟 포지션이랑, 속도 계산해서 코루틴 돌려야함, 회전이 있으면 대각선 배지어 곡선이동
     { 
         yield return null;
